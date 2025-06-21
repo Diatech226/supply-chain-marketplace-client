@@ -29,3 +29,5 @@ export const updateShipmentStatus = async (id, status) => {
   if (!res.ok) throw new Error(await res.text());
   return res.json();
 };
+// src/utils/api.js
+export const API_BASE = 'http://localhost:5000';
